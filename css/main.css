@@ -5,6 +5,12 @@ body {
   color: #171717;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Base */
 
 .color-111 { color: #111; }
@@ -182,15 +188,23 @@ body {
 
 .recommendation-item {
   /*flex-grow: 1;*/
+  box-sizing: border-box;
   margin-bottom: 2rem;
   flex-basis: 50%;
-  /*padding-right: 2px;*/
-  /*background: yellow;*/
+}
+
+.recommendation-item:nth-child(odd) {
+  padding-right: 0.875rem;
+}
+
+.recommendation-item:nth-child(even) {
+  padding-left: 0.875rem;
 }
 
 .recommendation-item img {
   width: 100%;
-  /*padding-bottom: 100px;*/
+  /*width: 130px;*/
+  /*height: 174px;*/
 }
 
 .recommendation-item .recommendation-title {
@@ -217,4 +231,20 @@ body {
   margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.item-more ul {
+  margin-top: 0.5rem;
+}
+
+.item-more li {
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.875rem;
+}
+
+.item-more li a {
+  text-decoration: none;
+  font-style: italic;
+  color: #171717;
 }
