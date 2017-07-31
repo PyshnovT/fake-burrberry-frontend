@@ -154,6 +154,7 @@ ul {
 }
 
 .item-menu-header h2 {
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
