@@ -122,10 +122,34 @@ body {
 
 .item-size .item-size-button-help {
   /*margin-top: 0.5rem;*/
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: 'Raleway', sans-serif;
   font-size: 0.75rem;
   border: none;
-  background: none;
+  background: transparent;
+}
+
+/* Section menu */
+
+.item-description {}
+.item-shipping {}
+
+.item-menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: solid 2px #c6c6c6;
+}
+
+.section-header-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  /*background: red;*/
 }
