@@ -76,7 +76,7 @@ body {
   margin-left: 1rem;
   padding: 1.25rem;
   box-sizing: border-box;
-  box-shadow:inset 0px 0px 0px 1px #232122;
+  box-shadow: inset 0px 0px 0px 1px #232122;
   border: none;
   border-radius: 1.25rem;
 }
@@ -89,5 +89,43 @@ body {
 .item-size {
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 2.5rem;
   border-top: 2px solid #c6c6c6;
+}
+
+.item-size-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.item-size-buttons button {
+  margin-bottom: 1rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 2px;
+}
+
+.item-size-button-black {
+  background: #171717;
+  color: #fff;
+}
+
+.item-size-button-white {
+  background: #fff;
+  color: #171717;
+  box-shadow: inset 0px 0px 0px 1px #999999;
+}
+
+.item-size .item-size-button-help {
+  /*margin-top: 0.5rem;*/
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  border: none;
+  background: none;
 }
