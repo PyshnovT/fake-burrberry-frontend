@@ -147,9 +147,74 @@ body {
   border-top: solid 2px #c6c6c6;
 }
 
-.section-header-title {
+.item-menu-header h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  /*background: red;*/
+}
+
+/* Recommend */
+
+.item-recommend {
+  padding-top: 2.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 2px solid #c6c6c6;
+}
+
+.section-header-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: solid 2px #111;
+}
+
+.recommendations {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommendation-item {
+  /*flex-grow: 1;*/
+  margin-bottom: 2rem;
+  flex-basis: 50%;
+  /*padding-right: 2px;*/
+  /*background: yellow;*/
+}
+
+.recommendation-item img {
+  width: 100%;
+  /*padding-bottom: 100px;*/
+}
+
+.recommendation-item .recommendation-title {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  line-height: 1.5rem;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #111;
+}
+
+.recommendation-item .recommendation-price {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.item-more {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
