@@ -1,0 +1,103 @@
+/* Tags */
+
+body {
+  margin: 0;
+  color: #171717;
+}
+/* Base */
+
+.color-111 {
+  color: #111;
+}
+
+/* Header */
+
+.header-logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px #c6c6c6;
+}
+
+.header-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Main */
+
+.item-main {
+  padding-bottom: 2rem;
+}
+
+.item-title {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-family: 'Lora', serif;
+}
+
+.item-images {
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.item-price h2, .item-price p {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.item-price h2 {
+  font-size: 1.125rem;
+}
+
+.item-price p {
+  font-size: 0.75rem;
+}
+
+.item-color-current {
+  margin: 0;
+  padding-left: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+}
+
+.item-color-picker {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.item-color-picker button {
+  box-sizing: border-box;
+  margin-left: 1rem;
+  padding: 1.25rem;
+  box-shadow:inset 0px 0px 0px 1px #232122;
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.item-color-picker .button-black {
+  background-color: #232122;
+}
+
+.item-color-picker .button-honey {
+  background-color: #cfa880;
+}
+
+.item-size {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 2px solid #c6c6c6;
+}
