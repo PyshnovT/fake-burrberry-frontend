@@ -4,11 +4,10 @@ body {
   margin: 0;
   color: #171717;
 }
+
 /* Base */
 
-.color-111 {
-  color: #111;
-}
+.color-111 { color: #111; }
 
 /* Header */
 
@@ -24,11 +23,9 @@ body {
   margin-right: auto;
 }
 
-/* Main */
+/* Item main info */
 
-.item-main {
-  padding-bottom: 2rem;
-}
+.item-main { padding-bottom: 2rem; }
 
 .item-title {
   margin-top: 1.5rem;
@@ -52,20 +49,16 @@ body {
   padding-right: 1rem;
 }
 
-.item-price h2, .item-price p {
+.item-price h2,
+.item-price p {
   margin: 0;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.item-price h2 {
-  font-size: 1.125rem;
-}
-
-.item-price p {
-  font-size: 0.75rem;
-}
+.item-price h2 { font-size: 1.125rem; }
+.item-price p { font-size: 0.75rem; }
 
 .item-color-current {
   margin: 0;
@@ -74,27 +67,24 @@ body {
   font-size: 0.75rem;
 }
 
-.item-color-picker {
+.item-colorpicker {
   display: flex;
   margin-top: 1rem;
 }
 
-.item-color-picker button {
-  box-sizing: border-box;
+.item-colorpicker button {
   margin-left: 1rem;
   padding: 1.25rem;
+  box-sizing: border-box;
   box-shadow:inset 0px 0px 0px 1px #232122;
   border: none;
   border-radius: 1.25rem;
 }
 
-.item-color-picker .button-black {
-  background-color: #232122;
-}
+.item-colorpicker .colorpicker-button-black { background-color: #232122; }
+.item-colorpicker .colorpicker-button-honey { background-color: #cfa880; }
 
-.item-color-picker .button-honey {
-  background-color: #cfa880;
-}
+/* Item size info */
 
 .item-size {
   margin-left: 1rem;
