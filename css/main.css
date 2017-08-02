@@ -77,12 +77,12 @@ body {
 .product-info-price {
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.19;
+  line-height: 20px;
 }
 
 .product-info-articul {
   font-size: 0.75rem;
-  line-height: 1.17;
+  line-height: 1.33;
 }
 
 .product-info-current-color {
@@ -90,7 +90,7 @@ body {
   padding-left: 1rem;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
-  line-height: 1.17;
+  line-height: 1.33;
 }
 
 .product-info-colorpicker {
@@ -139,13 +139,14 @@ body {
 }
 
 .product-size-button-help {
+  margin-top: 1px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
-  line-height: 1.17;
+  line-height: 1.33;
   border: none;
   background: transparent;
 }
@@ -200,6 +201,7 @@ body {
 /* Other */
 
 .product-other-title {
+  /*background: red;*/
   display: inline-block;
   margin: 0;
   margin-bottom: 1rem;
@@ -214,7 +216,7 @@ body {
 /* Recommend */
 
 .product-recommend {
-  padding-top: 3rem;
+  padding-top: 45px;/*3rem;*/
   padding-left: 1rem;
   padding-right: 1rem;
   border-top: 1px solid #c6c6c6;
@@ -304,6 +306,8 @@ body {
 .footer-buttons {
   margin: 0;
   padding: 0;
+  margin-top: 1px; /* для макета */
+  margin-bottom: -1px;
 }
 
 .footer-button {
@@ -313,7 +317,7 @@ body {
   padding: 0;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
-  line-height: 1.17;
+  line-height: 1.33;
   color: #999;
   background: transparent;
   border: none;
