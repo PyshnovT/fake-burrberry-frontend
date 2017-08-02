@@ -11,12 +11,13 @@ body {
 .button-black {
   background: #171717;
   color: #fff;
+  border-color: #171717;
 }
 
 .button-white {
   background: #fff;
   color: #171717;
-  box-shadow: inset 0px 0px 0px 1px #999999;
+  border-color: #999;
 }
 
 .ul-list {
@@ -47,6 +48,7 @@ body {
   margin: 1rem;
   font-size: 1.25rem;
   font-family: 'Lora', serif;
+  font-weight: normal;
   line-height: 1.2;
 }
 
@@ -131,7 +133,8 @@ body {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   line-height: 1.17;
-  border: none;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 2px;
 }
 
@@ -172,7 +175,7 @@ body {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.19;
+  line-height: 20px;
 }
 
 /* Description */
