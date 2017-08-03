@@ -99,9 +99,15 @@ body {
 }
 
 .product-info-colorpicker-button {
+  box-sizing: border-box;
   margin-left: 1rem;
   padding: 1.25rem;
-  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: -9999px;
   box-shadow: inset 0px 0px 0px 1px #232122;
   border: none;
   border-radius: 1.25rem;
@@ -179,16 +185,37 @@ body {
   line-height: 20px;
 }
 
+.product-menu-header-button:after {
+  content: url('../img/icon-open.svg');
+}
+
 /* Description */
 
 .product-description { }
 
 .product-description-content { margin-bottom: 2rem; }
 
-.product-description-content-text {
+.product-description-content-p {
   margin: 0;
+  padding: 0;
   margin-left: 1rem;
   margin-right: 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+
+.product-description-content-list {
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.product-description-content-li {
+  margin: 0;
   font-family: 'Lora', serif;
   font-size: 0.875rem;
   line-height: 24px;
