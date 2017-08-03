@@ -42,21 +42,9 @@ body {
   margin-right: -50vw;
 }
 
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
+.main {}
 
 @media only screen and (min-width: 48rem) {
-  .main {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
-  }
-
   .hr {
     display: none;
   }
@@ -541,11 +529,11 @@ body {
 /* footer */
 
 .footer {
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   margin-top: 4rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /*padding-right: 1rem;*/
+  /*padding-left: 1rem;*/
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #f3f3f3;
@@ -641,8 +629,12 @@ body {
 
 @media only screen and (min-width: 48rem) {
   .footer {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    /*padding-left: 0.5rem;*/
+    /*padding-right: 0.5rem;*/
+  }
+
+  .footer-wrapper {
+    max-width: 48rem;
   }
 
   .footer-links {
