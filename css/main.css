@@ -28,18 +28,17 @@ body {
 }
 
 .hr {
-  margin: 0;
-  padding: 0;
-  height: 1px;
-  background-color: #c6c6c6;
-  border: none;
-
-  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
+  margin: 0;
   margin-left: -50vw;
   margin-right: -50vw;
+  padding: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #c6c6c6;
+  border: none;
 }
 
 .main {}
@@ -529,11 +528,7 @@ body {
 /* footer */
 
 .footer {
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
   margin-top: 4rem;
-  /*padding-right: 1rem;*/
-  /*padding-left: 1rem;*/
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #f3f3f3;
@@ -628,15 +623,6 @@ body {
 }
 
 @media only screen and (min-width: 48rem) {
-  .footer {
-    /*padding-left: 0.5rem;*/
-    /*padding-right: 0.5rem;*/
-  }
-
-  .footer-wrapper {
-    max-width: 48rem;
-  }
-
   .footer-links {
     display: flex;
   }
