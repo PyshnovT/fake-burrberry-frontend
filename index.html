@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2" >
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -16,29 +17,33 @@
         <img class="header-img" src="img/logo.svg">
       </header>
       <main class="main">
+        <h1 class="product-info-title color-111">Long Cotton Gabardine Car Coat</h1>
         <section class="product-info">
-          <h1 class="product-info-title color-111">Long Cotton Gabardine Car Coat</h1>
-          <section class="product-info-images">
-            <img src="img/guy.jpg" alt="Long Cotton Gabardine Car Coat">
-            <img src="img/guy.jpg" alt="Long Cotton Gabardine Car Coat">
-            <img src="img/guy.jpg" alt="Long Cotton Gabardine Car Coat">
+          <section class="product-info-images-wrapper col-xs-12 col-md-7">
+            <section class="product-info-images">
+              <img class="product-info-image" src="img/bitmap@3x.jpg" alt="Long Cotton Gabardine Car Coat">
+              <img class="product-info-image" src="img/bitmap@3x.jpg" alt="Long Cotton Gabardine Car Coat">
+              <img class="product-info-image" src="img/bitmap@3x.jpg" alt="Long Cotton Gabardine Car Coat">
+            </section>
           </section>
-          <section class="product-info-description color-111">
-            <h2 class="product-info-price">110 000 руб.</h2>
-            <p class="product-info-articul">Item 39428531</p>
+          <section class="product-info-description-wrapper col-xs-12 col-md-5">
+            <section class="product-info-description color-111">
+              <h2 class="product-info-price">110 000 руб.</h2>
+              <p class="product-info-articul">Item 39428531</p>
+            </section>
+            <p class="product-info-current-color">Colour: Honey</p>
+            <section class="product-info-colorpicker">
+              <button class="product-info-colorpicker-button colorpicker-button-black"></button>
+              <button class="product-info-colorpicker-button colorpicker-button-honey"></button>
+            </section>
+            <section class="product-info-size">
+              <section class="product-info-size-buttons">
+                <button class="product-info-size-button button-black">SELECT A SIZE</button>
+                <button class="product-info-size-button button-white">FIND IN STORE</button>
+              </section>
+              <button class="product-info-size-button-help">NEED SIZE HELP?</button>
+            </section>
           </section>
-          <p class="product-info-current-color">Colour: Honey</p>
-          <section class="product-info-colorpicker">
-            <button class="product-info-colorpicker-button colorpicker-button-black" type="button">Black</button>
-            <button class="product-info-colorpicker-button colorpicker-button-honey" type="button">Honey</button>
-          </section>
-        </section>
-        <section class="product-size">
-          <section class="product-size-buttons">
-            <button class="product-size-button button-black">SELECT A SIZE</button>
-            <button class="product-size-button button-white">FIND IN STORE</button>
-          </section>
-          <button class="product-size-button-help">NEED SIZE HELP?</button>
         </section>
         <section class="product-description">
           <header class="product-menu-header">
@@ -73,22 +78,22 @@
         <section class="product-recommend">
           <h2 class="product-other-title">WE RECOMMEND</h2>
           <section class="product-recommend-list">
-            <section class="product-recommend-card">
+            <section class="product-recommend-card col-xs-6 col-md-3">
               <img class="product-recommend-card-image" src="https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
               <h3 class="product-recommend-card-title">Emroided Hooded</h3>
               <h5 class="product-recommend-card-price">27 000 руб</h5>
             </section>
-            <section class="product-recommend-card">
+            <section class="product-recommend-card col-xs-6 col-md-3">
               <img class="product-recommend-card-image" src="https://assets.burberry.com/is/image/Burberryltd/eb872d02449c4050916c9eaf44e266bfdbd32304.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195">
               <h3 class="product-recommend-card-title">Relaxed Fit Stretch Jeans</h3>
               <h5 class="product-recommend-card-price">22 500 руб</h5>
             </section>
-            <section class="product-recommend-card">
+            <section class="product-recommend-card col-xs-6 col-md-3">
               <img class="product-recommend-card-image" src="https://assets.burberry.com/is/image/Burberryltd/cfaeb1b3c79aeee09dfda4e26a9fb3f4525df542.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195">
               <h3 class="product-recommend-card-title">Leather and House Check</h3>
               <h5 class="product-recommend-card-price">120 000 руб</h5>
             </section>
-            <section class="product-recommend-card">
+            <section class="product-recommend-card col-xs-6 col-md-3">
               <img class="product-recommend-card-image" src="https://assets.burberry.com/is/image/Burberryltd/b33127f06e6c404cc3168645e099a9eb71aeca9c.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195">
               <h3 class="product-recommend-card-title">Leather Wingtip Check</h3>
               <h5 class="product-recommend-card-price">46 000 руб</h5>

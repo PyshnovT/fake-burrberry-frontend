@@ -26,6 +26,17 @@ body {
   list-style: none;
 }
 
+.main {}
+
+@media only screen and (min-width: 48rem) {
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
+
 /* Header */
 
 .header {
@@ -42,7 +53,10 @@ body {
 
 /* Product info */
 
-.product-info { padding-bottom: 2rem; }
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .product-info-title {
   margin: 1rem;
@@ -52,10 +66,32 @@ body {
   line-height: 1.2;
 }
 
+.product-info-images-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 .product-info-images {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
+}
+
+.product-info-image {
+  width: 300px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-info-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-info-description-wrapper {
+  margin: 0;
+  padding: 0;
 }
 
 .product-info-description {
@@ -118,20 +154,21 @@ body {
 
 /* Item size info */
 
-.product-size {
+.product-info-size {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 2.5rem;
+  margin-top: 2rem;
   border-top: 1px solid #c6c6c6;
 }
 
-.product-size-buttons {
+.product-info-size-buttons {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
 
-.product-size-button {
+.product-info-size-button {
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -144,7 +181,7 @@ body {
   border-radius: 2px;
 }
 
-.product-size-button-help {
+.product-info-size-button-help {
   margin-top: 1px;
   padding-left: 0;
   padding-right: 0;
@@ -259,15 +296,17 @@ body {
 .product-recommend-card {
   box-sizing: border-box;
   margin-bottom: 2rem;
-  flex-basis: 50%;
+  padding: 0;
 }
 
-.product-recommend-card:nth-child(odd) {
-  padding-right: 0.875rem;
-}
+@media only screen and (max-width: 48rem) {
+  .product-recommend-card:nth-child(odd) {
+    padding-right: 0.875rem;
+  }
 
-.product-recommend-card:nth-child(even) {
-  padding-left: 0.875rem;
+  .product-recommend-card:nth-child(even) {
+    padding-left: 0.875rem;
+  }
 }
 
 .product-recommend-card-image {
