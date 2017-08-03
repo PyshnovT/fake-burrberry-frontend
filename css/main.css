@@ -337,9 +337,78 @@ body {
   line-height: 24px;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-description-content { margin-bottom: 1.5rem; }
+}
+
 /* Shipping */
 
 .product-shipping {}
+
+@media only screen and (min-width: 48rem) {
+  .product-shipping {
+    display: none;
+  }
+}
+
+/* Delivery */
+
+.product-delivery {
+  display: none;
+}
+
+.product-delivery-image {
+  margin: 0;
+  padding: 0;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 100%;
+  align-content:
+}
+
+.product-delivery-description {
+  padding: 0;
+  padding-left: 0.5rem;
+}
+
+.product-delivery-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-delivery-description-row {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.product-delivery-description-title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.product-delivery-description-text {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-delivery {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 /* Other */
 
@@ -356,6 +425,12 @@ body {
   border-bottom: 1px solid #111;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-other-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Recommend */
 
 .product-recommend {
@@ -368,6 +443,7 @@ body {
   margin-top: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .product-recommend-card {
@@ -385,12 +461,21 @@ body {
 }
 
 @media only screen and (min-width: 48rem) {
+  .product-recommend {
+    padding-top: 1.5rem;
+  }
+
   .product-recommend-card:nth-child(odd) {
     padding-right: 0rem;
   }
 
   .product-recommend-card:nth-child(even) {
     padding-left: 0rem;
+  }
+
+  .product-recommend-card {
+    /*margin-right: 1rem;*/
+    flex-basis: 23.4%;
   }
 }
 
@@ -442,6 +527,12 @@ body {
   text-decoration: none;
   font-style: italic;
   color: #171717;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-more {
+    display: none;
+  }
 }
 
 /* footer */
