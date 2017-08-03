@@ -66,7 +66,7 @@ body {
 
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (max-width: 48rem) {
   .full-width-xs {
     width: 100vw;
     position: relative;
@@ -142,13 +142,14 @@ body {
   }
 
   .product-info-image {
-    width: 100%;
+    width: 432px;
     height: 100%;
   }
 
   .product-info-title {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .product-info-images-wrapper {
@@ -157,6 +158,7 @@ body {
     right: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-right: 0.5rem;
     width: 100%;
   }
 }
@@ -226,7 +228,7 @@ body {
 @media only screen and (min-width: 48rem) {
   .product-info-description-wrapper {
     margin-top: 0;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -300,6 +302,13 @@ body {
   content: url('../img/icon-open.svg');
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-menu-header-button {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
 /* Description */
 
 .product-description { }
@@ -309,21 +318,19 @@ body {
 .product-description-content-p {
   margin: 0;
   padding: 0;
-  /*margin-left: 1rem;*/
-  /*margin-right: 1rem;*/
   font-family: 'Lora', serif;
   font-size: 0.875rem;
   line-height: 24px;
 }
 
-.product-description-content-list {
+.product-description-content ul {
   margin: 0;
   margin-top: 1.5rem;
   padding: 0;
   list-style: none;
 }
 
-.product-description-content-li {
+.product-description-content li {
   margin: 0;
   font-family: 'Lora', serif;
   font-size: 0.875rem;
