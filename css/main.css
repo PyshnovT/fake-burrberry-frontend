@@ -280,7 +280,7 @@ body {
 /* Recommend */
 
 .product-recommend {
-  padding-top: 45px;/*3rem;*/
+  padding-top: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-top: 1px solid #c6c6c6;
@@ -373,13 +373,13 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 1px; /* для макета */
-  margin-bottom: -1px;
+  /*margin-bottom: -1px;*/
 }
 
 .footer-button {
   display: block;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 17px; /* 1rem */
   padding: 0;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
@@ -403,7 +403,6 @@ body {
 
 .footer-contact-link {
   display: block;
-  padding-top: 1px;
   text-align: center;
   text-decoration: none;
   font-family: 'Lora', serif;
