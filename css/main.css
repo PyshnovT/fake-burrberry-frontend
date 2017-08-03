@@ -28,14 +28,14 @@ body {
 
 .main {}
 
-@media only screen and (min-width: 48rem) {
+/*@media only screen and (min-width: 48rem) {
   .main {
     margin-left: auto;
     margin-right: auto;
     padding-right: .5rem;
     padding-left: .5rem;
   }
-}
+}*/
 
 /* Header */
 
@@ -59,7 +59,8 @@ body {
 }
 
 .product-info-title {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-family: 'Lora', serif;
   font-weight: normal;
@@ -98,8 +99,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .product-info-price,
@@ -123,7 +122,6 @@ body {
 
 .product-info-current-color {
   margin: 0;
-  padding-left: 1rem;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   line-height: 1.33;
@@ -136,7 +134,7 @@ body {
 
 .product-info-colorpicker-button {
   box-sizing: border-box;
-  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 1.25rem;
   width: 0;
   height: 0;
@@ -155,8 +153,6 @@ body {
 /* Item size info */
 
 .product-info-size {
-  margin-left: 1rem;
-  margin-right: 1rem;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
   border-top: 1px solid #c6c6c6;
@@ -183,8 +179,7 @@ body {
 
 .product-info-size-button-help {
   margin-top: 1px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -205,10 +200,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   width: 100%;
   border: none;
   background: transparent;
@@ -235,8 +229,8 @@ body {
 .product-description-content-p {
   margin: 0;
   padding: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  /*margin-left: 1rem;*/
+  /*margin-right: 1rem;*/
   font-family: 'Lora', serif;
   font-size: 0.875rem;
   line-height: 24px;
@@ -245,8 +239,6 @@ body {
 .product-description-content-list {
   margin: 0;
   margin-top: 1.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
   padding: 0;
   list-style: none;
 }
@@ -281,8 +273,6 @@ body {
 
 .product-recommend {
   padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   border-top: 1px solid #c6c6c6;
 }
 
@@ -340,8 +330,6 @@ body {
 
 .product-more {
   margin-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .product-more-links {
@@ -365,7 +353,8 @@ body {
 
 .footer {
   margin-top: 4rem;
-  padding: 2rem 1rem 2rem 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #f3f3f3;
 }
 
