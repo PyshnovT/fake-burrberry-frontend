@@ -21,13 +21,7 @@ body {
   border-color: #999;
 }
 
-.ul-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hr {
+.product-section-separator {
   position: relative;
   left: 50%;
   right: 50%;
@@ -44,25 +38,10 @@ body {
 .main {}
 
 @media only screen and (min-width: 48rem) {
-  .hr {
+  .product-section-separator {
     display: none;
   }
 }
-
-/*.full-width-xs {
-
-}
-
-@media only screen and (max-width: 48rem) {
-  .full-width-xs {
-    width: 100vw;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}*/
 
 /* Header */
 
@@ -302,7 +281,7 @@ body {
 
 .product-description-content { margin-bottom: 2rem; }
 
-.product-description-content-p {
+.product-description-content p {
   margin: 0;
   padding: 0;
   font-family: 'Lora', serif;
@@ -431,27 +410,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
+  margin-left: -0.875rem;
+  margin-right: -0.875rem;
 }
 
 .product-recommend-card {
   box-sizing: border-box;
-  margin-bottom: 2rem;
-  padding: 0;
-}
-
-.product-recommend-card:nth-child(odd) {
   padding-right: 0.875rem;
-}
-
-.product-recommend-card:nth-child(even) {
   padding-left: 0.875rem;
+  margin-bottom: 2rem;
 }
 
 .product-recommend-card-image {
   width: 100%;
-  /*margin: 0;
-  padding: 0;
-  background: blue;*/
 }
 
 .product-recommend-card-title {
@@ -481,17 +452,14 @@ body {
     padding-top: 1.5rem;
   }
 
-  .product-recommend-card:nth-child(odd) {
-    padding-right: 0rem;
-  }
-
-  .product-recommend-card:nth-child(even) {
-    padding-left: 0rem;
+  .product-recommend-list {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
 
   .product-recommend-card {
-    /*margin-right: 1rem;*/
-    flex-basis: 23.4%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-bottom: 0;
   }
 }
@@ -503,6 +471,9 @@ body {
 }
 
 .product-more-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-top: 0.5rem;
 }
 
@@ -536,6 +507,8 @@ body {
 
 .footer-links {
   display: none;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
   margin-bottom: 1.25rem;
 }
 
@@ -551,8 +524,8 @@ body {
 .footer-links-column {
   margin: 0;
   padding: 0;
-  flex-basis: 23.4%;
-  margin-right: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .footer-links-list {
