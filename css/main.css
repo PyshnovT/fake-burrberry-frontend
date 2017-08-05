@@ -413,19 +413,22 @@ body {
 
 .product-recommend-list {
   display: flex;
-  margin-top: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
+  margin-top: 0.5rem;
   margin-left: -0.875rem;
   margin-right: -0.875rem;
 }
 
+/* didn't use col-xs because custom padding 28px */
 .product-recommend-card {
+  display: block;
   box-sizing: border-box;
+  margin-bottom: 2rem;
   padding-right: 0.875rem;
   padding-left: 0.875rem;
-  margin-bottom: 2rem;
+  flex-basis: 50%;
   text-decoration: none;
 }
 
@@ -467,6 +470,7 @@ body {
   }
 
   .product-recommend-card {
+    flex-basis: 25%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin-bottom: 0;
