@@ -315,38 +315,30 @@ body {
   .product-description-content { margin-bottom: 1.5rem; }
 }
 
-/* Shipping */
+/* Delivery */
 
-.product-shipping {}
+.product-delivery {}
 
 @media only screen and (min-width: 48rem) {
-  .product-shipping {
+  .product-menu-delivery {
     display: none;
   }
 }
 
-/* Delivery */
-
-.product-delivery {
+.product-delivery-content  {
   display: none;
 }
 
 .product-delivery-image {
-  background: red;
   margin: 0;
   padding: 0;
-  /*padding-right: 0.5rem;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
   width: auto;
   height: 324px;
   vertical-align: top;
 }
 
 .product-delivery-description {
-  background: red;
   padding: 0;
-  /*padding-left: 0.5rem;*/
 }
 
 .product-delivery-title {
@@ -384,7 +376,7 @@ body {
 }
 
 @media only screen and (min-width: 48rem) {
-  .product-delivery {
+  .product-delivery-content {
     display: flex;
     flex-direction: row;
   }
@@ -612,6 +604,7 @@ body {
 
   .footer-settings-button {
     margin: 0;
+    margin-top: 1px; /* макет */
     margin-right: 1.5rem;
   }
 
