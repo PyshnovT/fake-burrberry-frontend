@@ -67,9 +67,12 @@ body {
 
 /* Product info */
 
+/* do not use row because column direction */
 .product-info {
   display: flex;
   flex-direction: column;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 .product-info-title {
@@ -194,8 +197,6 @@ body {
 @media only screen and (min-width: 48rem) {
   .product-info-description-wrapper {
     margin-top: 0;
-    /*padding-left: 0.5rem;*/
-    padding-left: 9px; /* для макета */
   }
 }
 
