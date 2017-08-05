@@ -98,8 +98,8 @@ body {
 }
 
 .product-info-image {
-  width: 300px;
-  height: 100%;
+  width: auto;
+  height: 400px;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -108,8 +108,7 @@ body {
   }
 
   .product-info-image {
-    width: 432px;
-    height: 100%;
+    height: 576px;
   }
 
   .product-info-title {
@@ -194,7 +193,8 @@ body {
 @media only screen and (min-width: 48rem) {
   .product-info-description-wrapper {
     margin-top: 0;
-    padding-left: 0.5rem;
+    /*padding-left: 0.5rem;*/
+    padding-left: 9px; /* для макета */
   }
 }
 
@@ -529,12 +529,7 @@ body {
   font-size: 0.75rem;
 }
 
-.footer-links-column {
-  margin: 0;
-  padding: 0;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
+.footer-links-column {}
 
 .footer-links-list {
   display: flex;
