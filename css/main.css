@@ -268,10 +268,17 @@ body {
   content: url('../img/icon-open.svg');
 }
 
+.product-menu-header-button-opened:after {
+  transform: rotate(180deg);
+}
+
 @media only screen and (min-width: 48rem) {
   .product-menu-header-button {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
+  }
+  .product-menu-header-button:after {
+    display: none;
   }
 }
 
