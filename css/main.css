@@ -182,13 +182,13 @@ body {
   padding: 1.25rem;
   width: 0;
   height: 0;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-indent: -9999px;
   box-shadow: inset 0px 0px 0px 1px #232122;
   border: none;
   border-radius: 1.25rem;
+}
+
+.product-info-colorpicker-button-text {
+  display: none;
 }
 
 .colorpicker-button-black { background-color: #232122; }
