@@ -333,8 +333,8 @@ body {
 .product-delivery-image {
   margin: 0;
   padding: 0;
-  width: auto;
-  height: 324px;
+  width: 100%;
+  height: auto;
   vertical-align: top;
 }
 
