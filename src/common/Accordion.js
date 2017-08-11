@@ -49,7 +49,6 @@ class Accordion extends Component {
   }
 
   toggle() {
-    // alert('sds');
     this.setState((prevState, prevProps) => ({
         active: !prevState.active
     }));

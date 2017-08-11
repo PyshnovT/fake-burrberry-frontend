@@ -73,17 +73,17 @@ const Link = styled.a`
 export default function() {
   return (
     <Footer>
-        <div className="container container-fluid">
-          <Navigation />
-          <Settings>
-            <Button>Shipping country: Russian Federation</Button>
-            <Button>Language: English</Button>
-          </Settings>
-          <Help>
-            <Subtitle>Need help?</Subtitle>
-            <Link href="index.html">Find out more and contact us</Link>
-          </Help>
-        </div>
-      </Footer>
+      <div className="container container-fluid">
+        <Navigation />
+        <Settings>
+          <Button>Shipping country: Russian Federation</Button>
+          <Button>Language: English</Button>
+        </Settings>
+        <Help>
+          <Subtitle>Need help?</Subtitle>
+          <Link href="index.html">Find out more and contact us</Link>
+        </Help>
+      </div>
+    </Footer>
   );
 };
