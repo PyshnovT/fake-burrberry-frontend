@@ -10,6 +10,7 @@ const Recommendation = styled.section`
   }
 `;
 
+/* вынести */
 const Title = styled.h2`
   display: inline-block;
   margin: 0;

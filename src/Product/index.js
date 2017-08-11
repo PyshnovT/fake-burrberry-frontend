@@ -4,6 +4,7 @@ import Info from './Info/';
 import Description from './Description/';
 import Delivery from './Delivery/';
 import Recommendation from './Recommendation/'
+import More from './More/'
 
 const Title = styled.h1`
   margin-top: 1rem;
@@ -50,6 +51,7 @@ export default function() {
       <Delivery />
       <Separator />
       <Recommendation />
+      <More />
     </main>
   );
 }
