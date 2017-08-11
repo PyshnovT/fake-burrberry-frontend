@@ -8,4 +8,4 @@ Product page of the Burberry website. Built from the ground up for my portfolio 
 
 ## Demo
 
-[Try Demo on Rawgit]https://rawgit.com/PyshnovT/fake-burrberry-frontend/master/index.html
+[Try Demo on Rawgit](https://rawgit.com/PyshnovT/fake-burrberry-frontend/master/index.html)

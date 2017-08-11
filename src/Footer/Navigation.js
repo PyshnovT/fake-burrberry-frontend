@@ -45,33 +45,33 @@ export default function() {
         <Title>CUSTOMER SERVICE</Title>
         <List>
           <Link href="#">Contact Us</Link>
-          <Link class="footer-link" href="#">Payment</Link>
-          <Link class="footer-link" href="#">Shipping</Link>
-          <Link class="footer-link" href="#">Returns</Link>
-          <Link class="footer-link" href="#">Faqs</Link>
-          <Link class="footer-link" href="#">Live Chat</Link>
-          <Link class="footer-link" href="#">The Burberry App</Link>
-          <Link class="footer-link" href="#">Store Locator</Link>
+          <Link href="#">Payment</Link>
+          <Link href="#">Shipping</Link>
+          <Link href="#">Returns</Link>
+          <Link href="#">Faqs</Link>
+          <Link href="#">Live Chat</Link>
+          <Link href="#">The Burberry App</Link>
+          <Link href="#">Store Locator</Link>
         </List>
       </div>
       <div className="col-md-3">
         <Title>OUR COMPANY</Title>
         <List>
-          <Link class="footer-link" href="#">Our History</Link>
-          <Link class="footer-link" href="#">Burberry Group Plc</Link>
-          <Link class="footer-link" href="#">Careers</Link>
-          <Link class="footer-link" href="#">Corporate Responsibility</Link>
-          <Link class="footer-link" href="#">Site map</Link>
+          <Link href="#">Our History</Link>
+          <Link href="#">Burberry Group Plc</Link>
+          <Link href="#">Careers</Link>
+          <Link href="#">Corporate Responsibility</Link>
+          <Link href="#">Site map</Link>
         </List>
       </div>
       <div className="col-md-3">
         <Title>LEGAL & COOKIES</Title>
         <List>
-          <Link class="footer-link" href="#">Terms & Conditions</Link>
-          <Link class="footer-link" href="#">Privacy Policy</Link>
-          <Link class="footer-link" href="#">Cookie Policy</Link>
-          <Link class="footer-link" href="#">Accessibility Statement</Link>
-          <Link class="footer-link" href="#">Japan Only - SCTL Indications</Link>
+          <Link href="#">Terms & Conditions</Link>
+          <Link href="#">Privacy Policy</Link>
+          <Link href="#">Cookie Policy</Link>
+          <Link href="#">Accessibility Statement</Link>
+          <Link href="#">Japan Only - SCTL Indications</Link>
         </List>
       </div>
     </Navigation>
