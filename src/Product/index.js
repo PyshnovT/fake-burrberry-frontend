@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+// import react-responsive from 'react-responsive';
 import Info from './Info/';
+import DesktopInfo from './Info/Desktop/';
 import Description from './Description/';
 import Delivery from './Delivery/';
 import Recommendation from './Recommendation/'
@@ -44,7 +46,7 @@ export default function() {
   return (
     <main className="container container-fluid">
       <Title>Long Cotton Gabardine Car Coat</Title>
-      <Info />
+      <Info color="#d4bdad" />
       <Separator />
       <Description />
       <Separator />

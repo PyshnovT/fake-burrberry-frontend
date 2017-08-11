@@ -42,10 +42,10 @@ export default function() {
     <Wrapper>
       <Images>
         <Image src="img/guy@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
-        <Image className="product-info-image" src="img/guy4@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
-        <Image className="product-info-image" src="img/guy2@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
-        <Image className="product-info-image" src="img/guy3@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
-        <Image className="product-info-image" src="img/guy5@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
+        <Image src="img/guy4@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
+        <Image src="img/guy2@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
+        <Image src="img/guy3@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
+        <Image src="img/guy5@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
       </Images>
     </Wrapper>
   );
