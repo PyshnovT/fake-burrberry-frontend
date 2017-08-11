@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { css } from 'styled-components';
 import Responsive from 'react-responsive';
 import Info from './Info/';
 import DesktopInfo from './Info/Desktop/';
@@ -8,6 +9,12 @@ import Delivery from './Delivery/';
 import Recommendation from './Recommendation/';
 import More from './More/';
 import Title from '../common/Title';
+
+const Background = styled.div`
+  ${ props => props.color && css`
+      background-color: ${props.color};
+  `};
+`;
 
 const Separator = styled.hr`
   position: relative;
@@ -32,16 +39,21 @@ export default function() {
   const Default = ({ children }) => <Responsive maxWidth={991} children={children} />;
 
   return (
-    <main className="container container-fluid">
-      <Default><Title>Long Cotton Gabardine Car Coat</Title></Default>
-      <Info color="#d4bdad" />
-      <Separator />
-      <Description />
-      <Separator />
-      <Delivery />
-      <Separator />
-      <Recommendation />
-      <More />
+    <main>
+      <Desktop><Background color="#d4bdad"><Info /></Background></Desktop>
+      <div className="container container-fluid">
+        <Default>
+          <Title>Long Cotton Gabardine Car Coat</Title>
+          <Info />
+        </Default>
+        <Separator />
+        <Description />
+        <Separator />
+        <Delivery />
+        <Separator />
+        <Recommendation />
+        <More />
+      </div>
     </main>
   );
 }

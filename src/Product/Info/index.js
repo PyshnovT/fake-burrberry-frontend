@@ -17,17 +17,7 @@ const Info = styled.section`
 
   @media only screen and (min-width: 62rem) {
     align-items: center;
-
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-
-    ${ props => props.color && css`
-        background-color: ${props.color};
-    `};
+    margin: 0;
   }
 `;
 
@@ -37,14 +27,16 @@ export default function(props) {
   const Default = ({ children }) => <Responsive maxWidth={991} children={children} />;
 
   return (
-    <Info color={props.color}>
-      <div className="col-xs-12 col-md-7 col-lg-6">
-        <Desktop><Image src="img/guy@3x.jpg" alt="Long Cotton Gabardine Car Coat"/></Desktop>
-        <Default><Images /></Default>
-      </div>
-      <div className="col-xs-12 col-md-5 col-lg-6">
-        <Panel />
-      </div>
-    </Info>
+    <div className="container container-fluid">
+      <Info color={props.color}>
+        <div className="col-xs-12 col-md-7 col-lg-6">
+          <Desktop><Image src="img/guy@3x.jpg" alt="Long Cotton Gabardine Car Coat"/></Desktop>
+          <Default><Images /></Default>
+        </div>
+        <div className="col-xs-12 col-md-5 col-lg-6">
+          <Panel />
+        </div>
+      </Info>
+    </div>
   );
 };
