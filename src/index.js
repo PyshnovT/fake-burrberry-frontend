@@ -5,6 +5,14 @@ import 'flexboxgrid2';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { IntlProvider, addLocaleData } from 'react-intl';
+import ruLocaleData from 'react-intl/locale-data/ru';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <IntlProvider locale="ru">
+    <App />
+  </IntlProvider>,
+  document.getElementById('root')
+);
+
 registerServiceWorker();

@@ -52,7 +52,13 @@ export default function(props) {
     <Image src={props.image} alt={props.title} />
     <Title>{props.title}</Title>
     <Price>
-      {props.price} руб.
+      <FormattedNumber
+        value={props.price}
+        style="currency"
+        currency={props.currency}
+        currencyDisplay="symbol"
+        minimumFractionDigits="0"
+      />
     </Price>
     </RecommendationCard>
   );
