@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Info from './Info/';
+import Description from './Description/';
 
 const Title = styled.h1`
   margin-top: 1rem;
@@ -18,11 +19,31 @@ const Title = styled.h1`
   }
 `;
 
+const Separator = styled.hr`
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 0;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #c6c6c6;
+  border: none;
+
+  @media only screen and (min-width: 48rem) {
+    display: none;
+  }
+`;
+
 export default function() {
   return (
     <main className="container container-fluid">
       <Title>Long Cotton Gabardine Car Coat</Title>
       <Info />
+      <Separator />
+      <Description />
     </main>
   );
 }
