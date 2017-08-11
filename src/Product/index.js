@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Info from './Info/';
 import Description from './Description/';
+import Delivery from './Delivery/';
+import Recommendation from './Recommendation/'
 
 const Title = styled.h1`
   margin-top: 1rem;
@@ -44,6 +46,10 @@ export default function() {
       <Info />
       <Separator />
       <Description />
+      <Separator />
+      <Delivery />
+      <Separator />
+      <Recommendation />
     </main>
   );
 }

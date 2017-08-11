@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
-import triangleIcon from '../assets/icon-open.svg'
+import triangleIcon from '../../assets/icon-open.svg';
 
-const Container = styled.section``;
-const Header = styled.header``;
+/* вынести в common */
+const Container = styled.section`
+  @media only screen and (min-width: 48rem) {
+    margin-top: 3rem;
+  }
+`;
 
 const ToggleButton = styled.button`
   display: flex;
@@ -28,12 +32,7 @@ const ToggleButton = styled.button`
   `};
 
   @media only screen and (min-width: 48rem) {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-
-    ::after {
-      display: none;
-    }
+    display: none;
   }
 }
 `;
@@ -48,41 +47,19 @@ const Title = styled.h2`
 
 const Content = styled.section`
   display: none;
-  margin-bottom: 2rem;
-
-  @media only screen and (min-width: 48rem) {
-    margin-bottom: 1.5rem;
-  }
+  flex-direction: row;
+  padding: 0.5rem;
 
   ${ props => props.active && css`
-      display: block;
+      display: flex;
   `};
 
-  p {
-    margin: 0;
+  @media only screen and (min-width: 48rem) {
     padding: 0;
-    font-family: 'Lora', serif;
-    font-size: 0.875rem;
-    line-height: 24px;
-  }
-
-  ul {
-    margin: 0;
-    margin-top: 1.5rem;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    margin: 0;
-    font-family: 'Lora', serif;
-    font-size: 0.875rem;
-    line-height: 24px;
   }
 `;
 
-
-class Accordion extends Component {
+class ShippingAccordion extends Component {
   constructor(props) {
     super();
     this.state = { active: true };
@@ -96,19 +73,17 @@ class Accordion extends Component {
   }
 
   render() {
-    return (
-      <Container>
-        <Header>
+      return (
+        <Container>
           <ToggleButton active={this.state.active} onClick={this.toggle}>
-            <Title>DESCRIPTION</Title>
+            <Title>SHIPPING & RETURNS</Title>
           </ToggleButton>
-        </Header>
-        <Content active={this.state.active}>
-          {this.props.children}
-        </Content>
-      </Container>
-    );
+          <Content active={this.state.active}>
+            {this.props.children}
+          </Content>
+        </Container>
+      );
   }
 }
 
-export default Accordion;
+export default ShippingAccordion;
