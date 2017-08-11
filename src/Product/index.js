@@ -1,28 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-// import react-responsive from 'react-responsive';
+import Responsive from 'react-responsive';
 import Info from './Info/';
 import DesktopInfo from './Info/Desktop/';
 import Description from './Description/';
 import Delivery from './Delivery/';
-import Recommendation from './Recommendation/'
-import More from './More/'
-
-const Title = styled.h1`
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-  font-family: 'Lora', serif;
-  font-weight: normal;
-  line-height: 1.2;
-  color: #111;
-
-  @media only screen and (min-width: 48rem) {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-  }
-`;
+import Recommendation from './Recommendation/';
+import More from './More/';
+import Title from '../common/Title';
 
 const Separator = styled.hr`
   position: relative;
@@ -43,9 +28,12 @@ const Separator = styled.hr`
 `;
 
 export default function() {
+  const Desktop = ({ children }) => <Responsive minWidth={992} children={children} />;
+  const Default = ({ children }) => <Responsive maxWidth={991} children={children} />;
+
   return (
     <main className="container container-fluid">
-      <Title>Long Cotton Gabardine Car Coat</Title>
+      <Default><Title>Long Cotton Gabardine Car Coat</Title></Default>
       <Info color="#d4bdad" />
       <Separator />
       <Description />

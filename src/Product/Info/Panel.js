@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Responsive from 'react-responsive';
 import ColorButton from './ColorButton';
+import Title from '../../common/Title';
 
 const Wrapper = styled.div`
   margin: 0;
@@ -9,6 +11,13 @@ const Wrapper = styled.div`
 
   @media only screen and (min-width: 48rem) {
     margin-top: 0;
+  }
+`;
+
+const PanelTitle = Title.extend`
+  @media only screen and (min-width: 62rem) {
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -99,11 +108,15 @@ const ButtonHelp = styled.button`
 `;
 
 export default function() {
+  const Desktop = ({ children }) => <Responsive minWidth={992} children={children} />;
+  const Default = ({ children }) => <Responsive maxWidth={991} children={children} />;
+
   return (
     <Wrapper>
+      <PanelTitle>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</PanelTitle>
       <Description>
         <Price>110 000 руб.</Price>
-        <Articul>Item 39428531</Articul>
+        <Default><Articul>Item 39428531</Articul></Default>
       </Description>
       <CurrentColor>Colour: Honey</CurrentColor>
       <ColorPicker>
