@@ -16,7 +16,7 @@ const Preferences = styled.div`
   @media only screen and (min-width: 62rem) {
     flex-direction: row;
     margin-top: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 `;
 

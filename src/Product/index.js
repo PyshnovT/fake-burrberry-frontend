@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
-import Responsive from "react-responsive";
+import { Desktop, Default } from "../common/Responsive";
 import Info from "./Info/";
 import Description from "./Description/";
 import Delivery from "./Delivery/";
@@ -36,11 +36,6 @@ const Separator = styled.hr`
 `;
 
 export default function() {
-  const Desktop = ({ children }) =>
-    <Responsive minWidth={992} children={children} />;
-  const Default = ({ children }) =>
-    <Responsive maxWidth={991} children={children} />;
-
   return (
     <main>
       <Desktop>

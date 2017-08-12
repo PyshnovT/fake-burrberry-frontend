@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import { Desktop, Default } from "../../../common/Responsive";
 import Title from "../../../common/Title";
 import Preferences from "./Preferences";
+import DeliveryOption from "../../../common/DeliveryOption";
 
 const Wrapper = styled.div`
   margin: 0;
@@ -61,6 +62,11 @@ export default function() {
         </Default>
       </Description>
       <Preferences />
+      <Desktop>
+        <DeliveryOption title="Free Next Day Delivery">
+          Order before 7pm Monday to Thursday for delivery the next day
+        </DeliveryOption>
+      </Desktop>
     </Wrapper>
   );
 }

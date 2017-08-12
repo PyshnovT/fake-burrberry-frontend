@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ShippingAccordion from "./ShippingAccordion";
+import DeliveryOption from "../../common/DeliveryOption";
 
 const Image = styled.img`
   margin: 0;
@@ -43,30 +44,6 @@ const Row = styled.div`
   }
 `;
 
-const P = styled.div`
-  margin: 0;
-  padding: 0;
-  margin-bottom: 1.5rem;
-`;
-
-const Subtitle = styled.h3`
-  margin: 0;
-  margin-bottom: 0.25rem;
-  padding: 0;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.75rem;
-  font-weight: bold;
-  line-height: 0.875rem;
-`;
-
-const Text = styled.p`
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.75rem;
-  line-height: 16px;
-`;
-
 export default function() {
   return (
     <ShippingAccordion>
@@ -77,30 +54,20 @@ export default function() {
         <div className="col-xs-12 col-md-5 col-lg-4">
           <Wrapper>
             <Title>DELIVERY</Title>
-            <P>
-              <Subtitle>Free Next Day Delivery</Subtitle>
-              <Text>
-                Order before 7pm Monday to Thursday for delivery the next day
-              </Text>
-            </P>
-            <P>
-              <Subtitle>Collect-in-Store</Subtitle>
-              <Text>
-                Order online today and pick up your items in store as early as
-                tomorrow
-              </Text>
-            </P>
-            <P>
-              <Subtitle>Free Returns</Subtitle>
-              <Text>Enjoy free returns on your order</Text>
-            </P>
-            <P>
-              <Subtitle>Free Gift Packaging</Subtitle>
-              <Text>
-                Discover our gift packaging, a gold lined box tied with a
-                coloured ribbon
-              </Text>
-            </P>
+            <DeliveryOption title="Free Next Day Delivery">
+              Order before 7pm Monday to Thursday for delivery the next day
+            </DeliveryOption>
+            <DeliveryOption title="Collect-in-Store">
+              Order online today and pick up your items in store as early as
+              tomorrow
+            </DeliveryOption>
+            <DeliveryOption title="Free Returns">
+              Enjoy free returns on your order
+            </DeliveryOption>
+            <DeliveryOption title="Free Gift Packaging">
+              Discover our gift packaging, a gold lined box tied with a coloured
+              ribbon
+            </DeliveryOption>
           </Wrapper>
         </div>
       </Row>
