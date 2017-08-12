@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import ColorButton from "./ColorButton";
 
-const ColorPicker = styled.div`
+const Wrapper = styled.div`
   @media only screen and (min-width: 62rem) {
     margin-bottom: 1.5rem;
   }
@@ -22,16 +22,46 @@ const ColorButtons = styled.div`
   margin-top: 1rem;
 `;
 
-export default function() {
-  return (
-    <ColorPicker>
-      <CurrentColor>
-        Colour: <Bold>Black</Bold>
-      </CurrentColor>
-      <ColorButtons>
-        <ColorButton value="#232122" />
-        <ColorButton value="#cfa880" />
-      </ColorButtons>
-    </ColorPicker>
-  );
+class ColorPicker extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentID: 0 };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle(index) {
+    this.setState({
+      currentID: index
+    });
+  }
+
+  render() {
+    const colorValues = ["#232122", "#cfa880"];
+    const colorNames = ["Black", "Honey"];
+
+    const buttonsList = colorValues.map((value, index) => {
+      return (
+        <ColorButton
+          value={value}
+          active={index == this.state.currentID}
+          index={index}
+          name={colorNames[index]}
+          onClick={this.toggle}
+        />
+      );
+    });
+
+    return (
+      <Wrapper>
+        <CurrentColor>
+          Colour: <Bold>{colorNames[this.state.currentID]}</Bold>
+        </CurrentColor>
+        <ColorButtons>
+          {buttonsList}
+        </ColorButtons>
+      </Wrapper>
+    );
+  }
 }
+
+export default ColorPicker;
