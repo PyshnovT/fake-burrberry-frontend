@@ -29,6 +29,8 @@ const Bold = styled.span`font-weight: bold;`;
 const HelpButton = TextButton.extend`padding: 0;`;
 const SizeButtons = styled.div``;
 
+const sizes = ["S", "M", "L", "XL"];
+
 class SizePicker extends Component {
   constructor(props) {
     super(props);
@@ -43,18 +45,6 @@ class SizePicker extends Component {
   }
 
   render() {
-    const sizes = ["S", "M", "L", "XL"];
-    const sizeButtons = sizes.map((value, index) => {
-      return (
-        <SizeButton
-          title={value}
-          active={index == this.state.currentID}
-          index={index}
-          onClick={this.toggle}
-        />
-      );
-    });
-
     return (
       <Wrapper>
         <Size>
@@ -64,7 +54,16 @@ class SizePicker extends Component {
           <HelpButton>NEED SIZE HELP?</HelpButton>
         </Size>
         <SizeButtons>
-          {sizeButtons}
+          {sizes.map((value, index) => {
+            return (
+              <SizeButton
+                title={value}
+                active={index == this.state.currentID}
+                index={index}
+                onClick={this.toggle}
+              />
+            );
+          })}
         </SizeButtons>
       </Wrapper>
     );
