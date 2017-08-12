@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import AccordionButton from "../../common/AccordionButton";
-import { Desktop, Default, Mobile } from "../../common/Responsive";
+import { Lg, Default, Mobile } from "../../common/Responsive";
 
 const Container = styled.section`
   @media only screen and (min-width: 48rem) {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
-import { Desktop, Default } from "../common/Responsive";
+import { Lg, Default } from "../common/Responsive";
 import Info from "./Info/";
 import Description from "./Description/";
 import Delivery from "./Delivery/";
@@ -38,13 +38,13 @@ const Separator = styled.hr`
 export default function() {
   return (
     <main>
-      <Desktop>
+      <Lg>
         <Background color="#d4bdad">
           <div className="container">
             <Info />
           </div>
         </Background>
-      </Desktop>
+      </Lg>
       <div className="container container-fluid">
         <Default>
           <Title>Long Cotton Gabardine Car Coat</Title>

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import Images from "./Images";
 import Image from "./Image";
 import Panel from "./Panel/";
-import { Desktop, Default } from "../../common/Responsive";
+import { Lg, Default } from "../../common/Responsive";
 
 const Info = styled.section`
   display: flex;
@@ -25,9 +25,9 @@ export default function(props) {
   return (
     <Info>
       <div className="col-xs-12 col-md-7 col-lg-6">
-        <Desktop>
+        <Lg>
           <Image src="img/guy@3x.jpg" alt="Long Cotton Gabardine Car Coat" />
-        </Desktop>
+        </Lg>
         <Default>
           <Images />
         </Default>

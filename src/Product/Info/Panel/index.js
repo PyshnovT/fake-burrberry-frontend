@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Desktop, Default } from "../../../common/Responsive";
+import { Lg, Default } from "../../../common/Responsive";
 import Title from "../../../common/Title";
 import Preferences from "./Preferences";
 import DeliveryOption from "../../../common/DeliveryOption";
@@ -62,11 +62,11 @@ export default function() {
         </Default>
       </Description>
       <Preferences />
-      <Desktop>
+      <Lg>
         <DeliveryOption title="Free Next Day Delivery">
           Order before 7pm Monday to Thursday for delivery the next day
         </DeliveryOption>
-      </Desktop>
+      </Lg>
     </Wrapper>
   );
 }

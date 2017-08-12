@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Desktop, Default } from "../../common/Responsive";
+import { Lg, Default } from "../../common/Responsive";
 import Accordion from "./Accordion";
 import Image from "./Image";
 import Images from "./Images";
@@ -27,9 +27,9 @@ export default function() {
     <Accordion>
       <Row>
         <div className="col-xs-12 col-lg-4">
-          <Desktop>
+          <Lg>
             <Title>DESCRIPTION</Title>
-          </Desktop>
+          </Lg>
           <p>A refined car coat crafted in protective cotton gabardine.</p>
           <p>
             Invented by Thomas Burberry in 1879, cotton gabardine is a tightly
@@ -54,15 +54,15 @@ export default function() {
             <li>Item 39428531</li>
           </ul>
         </div>
-        <Desktop>
+        <Lg>
           <div className="col-lg-8">
             <Image src="img/guy5@3x.jpg" alt="" />
           </div>
-        </Desktop>
+        </Lg>
       </Row>
-      <Desktop>
+      <Lg>
         <Images />
-      </Desktop>
+      </Lg>
     </Accordion>
   );
 }

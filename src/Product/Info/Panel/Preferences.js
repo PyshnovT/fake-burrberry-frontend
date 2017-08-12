@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Desktop, Default } from "../../../common/Responsive";
+import { Lg, Default } from "../../../common/Responsive";
 import Button from "./Button";
 import ColorPicker from "./ColorPicker";
 import TextButton from "./TextButton";
@@ -47,15 +47,15 @@ export default function() {
     <Preferences>
       <div className="col-xs-12 col-lg-6">
         <ColorPicker />
-        <Desktop>
+        <Lg>
           <BlockButton primary>ADD TO BAG</BlockButton>
-        </Desktop>
+        </Lg>
       </div>
       <Separator />
       <div className="col-xs-12 col-lg-6">
-        <Desktop>
+        <Lg>
           <SizePicker />
-        </Desktop>
+        </Lg>
         <Default>
           <BlockButton primary>SELECT A SIZE</BlockButton>
         </Default>
