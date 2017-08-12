@@ -20,25 +20,17 @@ const Button = styled.button`
 
 const Text = styled.span`display: none;`;
 
-class ColorButton extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <Button
-        value={this.props.value}
-        active={this.props.active}
-        onClick={() => this.props.onClick(this.props.index)}
-        type="button"
-      >
-        <Text>
-          Change color to {this.props.name}
-        </Text>
-      </Button>
-    );
-  }
+export default function(props) {
+  return (
+    <Button
+      value={props.value}
+      active={props.active}
+      onClick={() => props.onClick(props.index)}
+      type="button"
+    >
+      <Text>
+        Change color to {props.name}
+      </Text>
+    </Button>
+  );
 }
-
-export default ColorButton;
