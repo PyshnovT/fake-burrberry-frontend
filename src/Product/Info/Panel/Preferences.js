@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Lg, Default } from "../../../common/Responsive";
+import { Lg, ToLg } from "../../../common/Responsive";
 import Button from "./Button";
 import ColorPicker from "./ColorPicker";
 import TextButton from "./TextButton";
@@ -56,13 +56,13 @@ export default function() {
         <Lg>
           <SizePicker />
         </Lg>
-        <Default>
+        <ToLg>
           <BlockButton primary>SELECT A SIZE</BlockButton>
-        </Default>
+        </ToLg>
         <BlockButton block>FIND IN STORE</BlockButton>
-        <Default>
+        <ToLg>
           <TextButton>NEED SIZE HELP?</TextButton>
-        </Default>
+        </ToLg>
       </div>
     </Preferences>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Lg, Default } from "../../../common/Responsive";
+import { Lg, ToLg } from "../../../common/Responsive";
 import Title from "../../../common/Title";
 import Preferences from "./Preferences";
 import DeliveryOption from "../../../common/DeliveryOption";
@@ -57,9 +57,9 @@ export default function() {
       </PanelTitle>
       <Description>
         <Price>110 000 руб.</Price>
-        <Default>
+        <ToLg>
           <Articul>Item 39428531</Articul>
-        </Default>
+        </ToLg>
       </Description>
       <Preferences />
       <Lg>

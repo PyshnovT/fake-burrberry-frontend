@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import AccordionButton from "../../common/AccordionButton";
-import { Lg, Default } from "../../common/Responsive";
+import { Lg, ToLg } from "../../common/Responsive";
 
 const Container = styled.section`
   @media only screen and (min-width: 62rem) {
@@ -63,13 +63,13 @@ class Accordion extends Component {
   render() {
     return (
       <Container>
-        <Default>
+        <ToLg>
           <AccordionButton
             active={this.state.active}
             onClick={this.toggle}
             title="DESCRIPTION"
           />
-        </Default>
+        </ToLg>
         <Content active={this.state.active}>
           {this.props.children}
         </Content>

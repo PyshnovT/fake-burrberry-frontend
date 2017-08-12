@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
-import { Lg, Default } from "../common/Responsive";
+import { Lg, ToLg } from "../common/Responsive";
 import Info from "./Info/";
 import Description from "./Description/";
 import Delivery from "./Delivery/";
@@ -46,10 +46,10 @@ export default function() {
         </Background>
       </Lg>
       <div className="container container-fluid">
-        <Default>
+        <ToLg>
           <Title>Long Cotton Gabardine Car Coat</Title>
           <Info />
-        </Default>
+        </ToLg>
         <Separator />
         <Description />
         <Separator />

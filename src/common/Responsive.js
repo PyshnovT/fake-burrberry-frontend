@@ -2,7 +2,7 @@ import React from "react";
 import Responsive from "react-responsive";
 
 const Lg = ({ children }) => <Responsive minWidth={992} children={children} />;
-const Default = ({ children }) =>
+const ToLg = ({ children }) =>
   <Responsive maxWidth={991} children={children} />;
 const Mobile = ({ children }) =>
   <Responsive maxWidth={767} children={children} />;
@@ -13,4 +13,4 @@ const Mobile = ({ children }) =>
 // const Lg = ({ children }) => <Responsive minWidth={992} children={children} />;
 // const Xl = ({ children }) => <Responsive minWidth={1200} children={children} />;
 
-export { Lg, Default, Mobile };
+export { Lg, ToLg, Mobile };

@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Lg, Default } from "../../common/Responsive";
+import { Lg, ToLg } from "../../common/Responsive";
 import Accordion from "./Accordion";
 import Image from "./Image";
 import Images from "./Images";
