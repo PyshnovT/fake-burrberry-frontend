@@ -1,17 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import { css } from 'styled-components';
-import Responsive from 'react-responsive';
-import Info from './Info/';
-import DesktopInfo from './Info/Desktop/';
-import Description from './Description/';
-import Delivery from './Delivery/';
-import Recommendation from './Recommendation/';
-import More from './More/';
-import Title from '../common/Title';
+import React from "react";
+import styled from "styled-components";
+import { css } from "styled-components";
+import Responsive from "react-responsive";
+import Info from "./Info/";
+import Description from "./Description/";
+import Delivery from "./Delivery/";
+import Recommendation from "./Recommendation/";
+import More from "./More/";
+import Title from "../common/Title";
 
 const Background = styled.div`
-  ${ props => props.color && css`
+  ${props =>
+    props.color &&
+    css`
       background-color: ${props.color};
   `};
 `;
@@ -35,12 +36,20 @@ const Separator = styled.hr`
 `;
 
 export default function() {
-  const Desktop = ({ children }) => <Responsive minWidth={992} children={children} />;
-  const Default = ({ children }) => <Responsive maxWidth={991} children={children} />;
+  const Desktop = ({ children }) =>
+    <Responsive minWidth={992} children={children} />;
+  const Default = ({ children }) =>
+    <Responsive maxWidth={991} children={children} />;
 
   return (
     <main>
-      <Desktop><Background color="#d4bdad"><Info /></Background></Desktop>
+      <Desktop>
+        <Background color="#d4bdad">
+          <div className="container">
+            <Info />
+          </div>
+        </Background>
+      </Desktop>
       <div className="container container-fluid">
         <Default>
           <Title>Long Cotton Gabardine Car Coat</Title>
