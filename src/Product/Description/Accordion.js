@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
-import AccordionButton from './AccordionButton';
+import React, { Component } from "react";
+import styled, { css } from "styled-components";
+import AccordionButton from "../../common/AccordionButton";
+import { Desktop, Default } from "../../common/Responsive";
 
-const Container = styled.section``;
+const Container = styled.section`
+  @media only screen and (min-width: 62rem) {
+    margin-top: 4rem;
+  }
+`;
 const Header = styled.header``;
 
 const Content = styled.section`
@@ -13,7 +18,9 @@ const Content = styled.section`
     margin-bottom: 1.5rem;
   }
 
-  ${ props => props.active && css`
+  ${props =>
+    props.active &&
+    css`
       display: block;
   `};
 
@@ -40,7 +47,6 @@ const Content = styled.section`
   }
 `;
 
-
 class Accordion extends Component {
   constructor(props) {
     super();
@@ -50,7 +56,7 @@ class Accordion extends Component {
 
   toggle() {
     this.setState((prevState, prevProps) => ({
-        active: !prevState.active
+      active: !prevState.active
     }));
   }
 
@@ -58,10 +64,13 @@ class Accordion extends Component {
     return (
       <Container>
         <Header>
-          <AccordionButton
-          active={this.state.active}
-          onClick={this.toggle}
-          title="DESCRIPTION" />
+          <Default>
+            <AccordionButton
+              active={this.state.active}
+              onClick={this.toggle}
+              title="DESCRIPTION"
+            />
+          </Default>
         </Header>
         <Content active={this.state.active}>
           {this.props.children}
