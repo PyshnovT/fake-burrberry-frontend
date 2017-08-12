@@ -60,25 +60,25 @@ export default function() {
       <List>
         <RecommendationCard
           image="https://assets.burberry.com/is/image/Burberryltd/f51a470fc157e3014a115c64276c2e124d9fc477.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195"
-          title="Emroided Hooded Content For Three Lines"
+          title="Lightweight Crew Neck Cashmere Sweater with Check Trim"
           price={27000}
           currency="RUB"
         />
         <RecommendationCard
           image="https://assets.burberry.com/is/image/Burberryltd/eb872d02449c4050916c9eaf44e266bfdbd32304.jpg?$BBY_V2_ML_3X4$&hei=260&wid=195"
-          title="Emroided Hooded Content For Three Lines"
+          title="Check Detail Striped Silk Cotton T-shirt"
           price={27000}
           currency="RUB"
         />
         <RecommendationCard
           image="https://assets.burberry.com/is/image/Burberryltd/cfaeb1b3c79aeee09dfda4e26a9fb3f4525df542.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195"
-          title="Emroided Hooded Content For Three Lines"
+          title="Check Cashmere Scarf"
           price={27000}
           currency="RUB"
         />
         <RecommendationCard
           image="https://assets.burberry.com/is/image/Burberryltd/b33127f06e6c404cc3168645e099a9eb71aeca9c.jpg?$BBY_V2_SL_3X4$&hei=260&wid=195"
-          title="Emroided Hooded Content For Three Lines"
+          title="Leather Brogue Boots"
           price={27000}
           currency="RUB"
         />
