@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
-import triangleIcon from '../assets/icon-open.svg'
+import React, { Component } from "react";
+import styled, { css } from "styled-components";
+import triangleIcon from "../assets/icon-open.svg";
 
 const ToggleButton = styled.button`
   display: flex;
@@ -16,9 +16,13 @@ const ToggleButton = styled.button`
 
   ::after {
     content: url(${triangleIcon});
+    position: absolute;
+    right: 1rem;
   }
 
-  ${ props => props.active && css`
+  ${props =>
+    props.active &&
+    css`
     ::after {
       transform: rotate(180deg);
     }
@@ -46,7 +50,9 @@ const Title = styled.h2`
 export default function(props) {
   return (
     <ToggleButton active={props.active} onClick={props.onClick}>
-      <Title>{props.title}</Title>
+      <Title>
+        {props.title}
+      </Title>
     </ToggleButton>
   );
 }
