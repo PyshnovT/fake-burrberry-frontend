@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import ShippingAccordion from './ShippingAccordion';
+import React from "react";
+import styled from "styled-components";
+import ShippingAccordion from "./ShippingAccordion";
 
 const Image = styled.img`
   margin: 0;
@@ -10,14 +10,12 @@ const Image = styled.img`
   vertical-align: top;
 `;
 
-const Wrapper = styled.section`
-  padding: 0;
-`;
+const Wrapper = styled.section`padding: 0;`;
 
 const Title = styled.h2`
   display: inline-block;
   margin: 0;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -30,6 +28,15 @@ const Title = styled.h2`
 `;
 
 const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+`;
+
+const P = styled.div`
   margin: 0;
   padding: 0;
   margin-bottom: 1.5rem;
@@ -56,32 +63,40 @@ const Text = styled.p`
 export default function() {
   return (
     <ShippingAccordion>
-      <div className="row">
-        <div className="col-md-7">
+      <Row>
+        <div className="col-md-7 col-lg-7">
           <Image src="img/delivery@3x.jpg" />
         </div>
-        <div className="col-md-5">
+        <div className="col-md-5 col-lg-4">
           <Wrapper>
             <Title>DELIVERY</Title>
-            <Row>
+            <P>
               <Subtitle>Free Next Day Delivery</Subtitle>
-              <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
-            </Row>
-            <Row>
+              <Text>
+                Order before 7pm Monday to Thursday for delivery the next day
+              </Text>
+            </P>
+            <P>
               <Subtitle>Collect-in-Store</Subtitle>
-              <Text>Order online today and pick up your items in store as early as tomorrow</Text>
-            </Row>
-            <Row>
+              <Text>
+                Order online today and pick up your items in store as early as
+                tomorrow
+              </Text>
+            </P>
+            <P>
               <Subtitle>Free Returns</Subtitle>
               <Text>Enjoy free returns on your order</Text>
-            </Row>
-            <Row>
+            </P>
+            <P>
               <Subtitle>Free Gift Packaging</Subtitle>
-              <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
-            </Row>
+              <Text>
+                Discover our gift packaging, a gold lined box tied with a
+                coloured ribbon
+              </Text>
+            </P>
           </Wrapper>
         </div>
-      </div>
+      </Row>
     </ShippingAccordion>
   );
-};
+}

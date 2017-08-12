@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
-import AccordionButton from '../../common/AccordionButton';
+import React, { Component } from "react";
+import styled, { css } from "styled-components";
+import AccordionButton from "../../common/AccordionButton";
+import { Desktop, Default } from "../../common/Responsive";
 
 const Container = styled.section`
   @media only screen and (min-width: 48rem) {
@@ -13,7 +14,9 @@ const Content = styled.section`
   flex-direction: row;
   padding: 0.5rem;
 
-  ${ props => props.active && css`
+  ${props =>
+    props.active &&
+    css`
       display: flex;
   `};
 
@@ -31,19 +34,25 @@ class ShippingAccordion extends Component {
 
   toggle() {
     this.setState((prevState, prevProps) => ({
-        active: !prevState.active
+      active: !prevState.active
     }));
   }
 
   render() {
-      return (
-        <Container>
-          <AccordionButton active={this.state.active} onClick={this.toggle} title="SHIPPING & RETURNS" />
-          <Content active={this.state.active}>
-            {this.props.children}
-          </Content>
-        </Container>
-      );
+    return (
+      <Container>
+        <Default>
+          <AccordionButton
+            active={this.state.active}
+            onClick={this.toggle}
+            title="SHIPPING & RETURNS"
+          />
+        </Default>
+        <Content active={this.state.active}>
+          {this.props.children}
+        </Content>
+      </Container>
+    );
   }
 }
 
