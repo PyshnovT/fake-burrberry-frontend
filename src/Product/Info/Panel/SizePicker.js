@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import ButtonHelp from "./ButtonHelp";
 import SizeButton from "./SizeButton";
 
-const SizePicker = styled.div`
+const Wrapper = styled.div`
   margin: 0;
 
   @media only screen and (min-width: 62rem) {
@@ -29,21 +29,46 @@ const Bold = styled.span`font-weight: bold;`;
 const Help = ButtonHelp.extend`padding: 0;`;
 const SizeButtons = styled.div``;
 
-export default function(props) {
-  return (
-    <SizePicker>
-      <Size>
-        <Current>
-          Size: <Bold>{props.current}</Bold>
-        </Current>
-        <Help>NEED SIZE HELP?</Help>
-      </Size>
-      <SizeButtons>
-        <SizeButton title="S" />
-        <SizeButton title="M" />
-        <SizeButton title="L" />
-        <SizeButton title="XL" />
-      </SizeButtons>
-    </SizePicker>
-  );
+class SizePicker extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { currentID: 0 };
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle(index) {
+    this.setState({
+      currentID: index
+    });
+  }
+
+  render() {
+    const sizes = ["S", "M", "L", "XL"];
+    const sizeButtons = sizes.map((value, index) => {
+      return (
+        <SizeButton
+          title={value}
+          active={index == this.state.currentID}
+          index={index}
+          onClick={this.toggle}
+        />
+      );
+    });
+
+    return (
+      <Wrapper>
+        <Size>
+          <Current>
+            Size: <Bold>{sizes[this.state.currentID]}</Bold>
+          </Current>
+          <Help>NEED SIZE HELP?</Help>
+        </Size>
+        <SizeButtons>
+          {sizeButtons}
+        </SizeButtons>
+      </Wrapper>
+    );
+  }
 }
+
+export default SizePicker;

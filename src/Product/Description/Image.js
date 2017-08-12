@@ -1,7 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
 const Image = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
   height: 400px;
   vertical-align: top;
@@ -11,8 +14,12 @@ const Image = styled.img`
   }
 `;
 
+const D = styled.div``;
+
 export default function(props) {
   return (
-    <Image src={props.src} alt={props.alt} />
+    <D>
+      <Image src={props.src} alt={props.alt} />
+    </D>
   );
 }

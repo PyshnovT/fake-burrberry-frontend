@@ -8,6 +8,7 @@ import Images from "./Images";
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 `;

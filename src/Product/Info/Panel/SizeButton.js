@@ -20,7 +20,11 @@ const Title = styled.span`
 
 export default function(props) {
   return (
-    <SizeButton>
+    <SizeButton
+      active={props.active}
+      onClick={() => props.onClick(props.index)}
+      type="button"
+    >
       <Title active={props.active}>
         {props.title}
       </Title>
