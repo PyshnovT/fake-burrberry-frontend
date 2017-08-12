@@ -14,12 +14,4 @@ const Image = styled.img`
   }
 `;
 
-const D = styled.div``;
-
-export default function(props) {
-  return (
-    <D>
-      <Image src={props.src} alt={props.alt} />
-    </D>
-  );
-}
+export default Image;

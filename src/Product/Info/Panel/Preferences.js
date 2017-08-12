@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { Desktop, Default } from "../../../common/Responsive";
 import Button from "./Button";
 import ColorPicker from "./ColorPicker";
-import ButtonHelp from "./ButtonHelp";
+import TextButton from "./TextButton";
 import SizePicker from "./SizePicker";
 
 const Preferences = styled.div`
@@ -61,7 +61,7 @@ export default function() {
         </Default>
         <BlockButton block>FIND IN STORE</BlockButton>
         <Default>
-          <ButtonHelp>NEED SIZE HELP?</ButtonHelp>
+          <TextButton>NEED SIZE HELP?</TextButton>
         </Default>
       </div>
     </Preferences>

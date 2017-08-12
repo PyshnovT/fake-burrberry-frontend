@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-const ButtonHelp = styled.button`
+const TextButton = styled.button`
   margin-top: 1px;
   padding: 0;
   padding-top: 0.5rem;
@@ -13,4 +13,4 @@ const ButtonHelp = styled.button`
   background: transparent;
 `;
 
-export default ButtonHelp;
+export default TextButton;

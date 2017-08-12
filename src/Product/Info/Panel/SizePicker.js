@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import ButtonHelp from "./ButtonHelp";
+import TextButton from "./TextButton";
 import SizeButton from "./SizeButton";
 
 const Wrapper = styled.div`
@@ -26,7 +26,7 @@ const Current = styled.p`
 `;
 
 const Bold = styled.span`font-weight: bold;`;
-const Help = ButtonHelp.extend`padding: 0;`;
+const HelpButton = TextButton.extend`padding: 0;`;
 const SizeButtons = styled.div``;
 
 class SizePicker extends Component {
@@ -61,7 +61,7 @@ class SizePicker extends Component {
           <Current>
             Size: <Bold>{sizes[this.state.currentID]}</Bold>
           </Current>
-          <Help>NEED SIZE HELP?</Help>
+          <HelpButton>NEED SIZE HELP?</HelpButton>
         </Size>
         <SizeButtons>
           {sizeButtons}

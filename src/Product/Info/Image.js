@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Image = styled.img`
   width: auto;
@@ -15,8 +15,4 @@ const Image = styled.img`
   }
 `;
 
-export default function(props) {
-  return (
-    <Image src={props.src} alt={props.alt} />
-  );
-}
+export default Image;
