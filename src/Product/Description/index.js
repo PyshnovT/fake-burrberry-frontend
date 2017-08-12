@@ -26,7 +26,9 @@ export default function() {
     <Accordion>
       <Row>
         <div className="col-xs-12 col-lg-4">
-          <Title>DESCRIPTION</Title>
+          <Desktop>
+            <Title>DESCRIPTION</Title>
+          </Desktop>
           <p>A refined car coat crafted in protective cotton gabardine.</p>
           <p>
             Invented by Thomas Burberry in 1879, cotton gabardine is a tightly
@@ -57,7 +59,9 @@ export default function() {
           </div>
         </Desktop>
       </Row>
-      <Images />
+      <Desktop>
+        <Images />
+      </Desktop>
     </Accordion>
   );
 }

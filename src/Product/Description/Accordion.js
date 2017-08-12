@@ -63,15 +63,13 @@ class Accordion extends Component {
   render() {
     return (
       <Container>
-        <Header>
-          <Default>
-            <AccordionButton
-              active={this.state.active}
-              onClick={this.toggle}
-              title="DESCRIPTION"
-            />
-          </Default>
-        </Header>
+        <Default>
+          <AccordionButton
+            active={this.state.active}
+            onClick={this.toggle}
+            title="DESCRIPTION"
+          />
+        </Default>
         <Content active={this.state.active}>
           {this.props.children}
         </Content>

@@ -30,10 +30,17 @@ const Title = styled.h2`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: -1em;
+  margin-right: -1rem;
+  padding: 0;
+
+  @media only screen and (min-width: 48rem) {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
 `;
 
 const P = styled.div`
@@ -64,10 +71,10 @@ export default function() {
   return (
     <ShippingAccordion>
       <Row>
-        <div className="col-md-7 col-lg-7">
+        <div className="col-xs-12 col-md-7 col-lg-7">
           <Image src="img/delivery@3x.jpg" />
         </div>
-        <div className="col-md-5 col-lg-4">
+        <div className="col-xs-12 col-md-5 col-lg-4">
           <Wrapper>
             <Title>DELIVERY</Title>
             <P>
