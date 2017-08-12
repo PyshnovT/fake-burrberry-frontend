@@ -22,6 +22,11 @@ const ColorButtons = styled.div`
   margin-top: 1rem;
 `;
 
+const colors = [
+  { label: "Black", value: "#232122" },
+  { label: "Honey", value: "#cfa880" }
+];
+
 class ColorPicker extends Component {
   constructor(props) {
     super(props);
@@ -36,16 +41,13 @@ class ColorPicker extends Component {
   }
 
   render() {
-    const colorValues = ["#232122", "#cfa880"];
-    const colorNames = ["Black", "Honey"];
-
-    const buttonsList = colorValues.map((value, index) => {
+    const buttonsList = colors.map((color, index) => {
       return (
         <ColorButton
-          value={value}
+          value={color.value}
           active={index == this.state.currentID}
           index={index}
-          name={colorNames[index]}
+          name={color.label}
           onClick={this.toggle}
         />
       );
@@ -54,7 +56,7 @@ class ColorPicker extends Component {
     return (
       <Wrapper>
         <CurrentColor>
-          Colour: <Bold>{colorNames[this.state.currentID]}</Bold>
+          Colour: <Bold>{colors[this.state.currentID].label}</Bold>
         </CurrentColor>
         <ColorButtons>
           {buttonsList}
